@@ -14,20 +14,10 @@ Welcome to the Exploding Kittens card game! This is an online single-player card
 ## Screenshots
 
   <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
-    <img src="Screenshots/welcomePage.png" alt="welcomePage" style="height: 130px; padding: 10px;">
+    <img src="Screenshots/welcomePage.png" alt="WelcomePage" style="height: 130px; padding: 10px;">
     <img src="Screenshots/game1.png" alt="gameScreenshot1" style="height: 130px; padding: 10px;">
     <img src="Screenshots/game2.png" alt="gameScreenshot1" style="height: 130px; padding: 10px;">
   </div>
-
-
-
-## Working
-
-  <video controls height="130">
-  <source src="Screenshots/kitten-gameplay.mp4" type="video/quicktime">
-    Sorry! Your browser does not support the video tag.
-  </video>
-
 
 ## How the Game Works
 
