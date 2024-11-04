@@ -17,11 +17,6 @@ Welcome to the Exploding Kittens card game! This is an online single-player card
     <img src="Screenshots/welcomePage.png" alt="welcomePage" style="height: 130px; padding: 10px;">
     <img src="Screenshots/game1.png" alt="gameScreenshot1" style="height: 130px; padding: 10px;">
     <img src="Screenshots/game2.png" alt="gameScreenshot1" style="height: 130px; padding: 10px;">
-    <img src="Screenshots/game3.png" alt="gameScreenshot1" style="height: 130px; padding: 10px;">
-    <img src="Screenshots/game4.png" alt="gameScreenshot1" style="height: 130px; padding: 10px;">
-    <img src="Screenshots/game5.png" alt="gameScreenshot1" style="height: 130px; padding: 10px;">
-    <img src="Screenshots/game6.png" alt="gameScreenshot1" style="height: 130px; padding: 10px;">
-    <img src="Screenshots/leaderboard.png" alt="Leaderboard" style="height: 130px; padding: 10px;">
   </div>
 
 
@@ -29,7 +24,7 @@ Welcome to the Exploding Kittens card game! This is an online single-player card
 ## Working
 
   <video controls height="130">
-  <source src="Screenshots/gameFilm.mp4" type="video/quicktime">
+  <source src="Screenshots/kitten-gameplay.mp4" type="video/quicktime">
     Sorry! Your browser does not support the video tag.
   </video>
 
@@ -53,47 +48,13 @@ Welcome to the Exploding Kittens card game! This is an online single-player card
 
 
 - **Gameplay:**
-  - Clicking on the deck reveals a card.
-  - If it's a cat card, it's removed from the deck.
-  - If it's an exploding kitten card and you don't have a defuse card, you lose.
-  - If it's a defuse card, it's removed from the deck and can be used to defuse an exploding kitten later.
-  - If it's a shuffle card, the game restarts with a freshly shuffled deck.
-  - Win the game by drawing all non-exploding kitten cards.
-
+  - When you click on the deck, a card is revealed.
+  - If it's a cat card, it's discarded from the deck.
+  - If it's an exploding kitten and you lack a defuse card, you lose the game.
+  - f it's a defuse card, it’s removed and saved to counter any future exploding kitten card.
+  - If it’s a shuffle card, the deck reshuffles and the game restarts.
+  - To win, draw all cards that aren’t exploding kittens.
 ## Accessing the Game Locally
-
-### File Directory of the Game
-```
-   |--exploding-kitten-frontend
-   |   |-- node_modules/
-   |   |-- public/
-   |   |   |-- index.html
-   |   |   |-- favicon.ico
-   |   |   |-- manifest.json
-   |   |-- src/
-   |   |   |-- components/
-   |   |   |   |-- CardBlock.js
-   |   |   |   |-- LeaderBoard.js
-   |   |   |   |--NameForm.js
-   |   |   |   |-- Navbar.js
-   |   |   |   |-- Toast.js
-   |   |   |-- assets/
-   |   |   |   |-- cat1.png
-   |   |   |   |-- cat2.png
-   |   |   |   |-- cat3.png
-   |   |   |   |-- cat4.png
-   |   |   |-- App.js
-   |   |   |-- App.css
-   |   |   |-- index.js
-   |   |   |-- index.css
-   |   |-- package.json
-   |   |-- package-lock.json
-   |   |-- README.md
-   |--exploding-kitten-backend
-   |   |--go.mod
-   |   |--go.sum
-   |   |--main.go
-```
 
 ### For Node.js (React Frontend):
 1. Install dependencies: `npm install`
@@ -104,8 +65,6 @@ Welcome to the Exploding Kittens card game! This is an online single-player card
 1. Install dependencies: `go mod tidy`
 2. Build the Go server: `go build -o main`
 3. Start the server: `./main`
-
-Sure, here are the steps to set up Redis for your project along with some example code snippets:
 
 ### For Redis DB(Backend):
 
@@ -140,7 +99,3 @@ That's it! You've successfully set up Redis for your project and connected to it
 - Redux
 - GoLang
 - Redis
-
-
-## Contributions and License
-This project is open for contributions. Feel free to fork the repository, make changes, and submit a pull request. There is no license specified for this project. Enjoy playing and happy coding!
