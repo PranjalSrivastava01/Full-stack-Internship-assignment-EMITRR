@@ -1,0 +1,262 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: #fffaf6; 
+  color: #f07506; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #fffaf6; 
+  border-radius: 15px; /* Added border-radius */
+}
+
+.navbar-left h1 {
+  margin: 0;
+  padding-right: 50px;
+}
+
+.navbar-right p {
+  margin: 0;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 25px; 
+  margin-top: 50px;
+}
+
+.card-block {
+  width: 100px;
+  height: 150px;
+  perspective: 1000px;
+  cursor: pointer;
+  background-color: #f07506; 
+  border-radius: 15px; /* Added border-radius */
+}
+
+.card-block.flipped .card-front {
+  transform: rotateY(-180deg);
+}
+
+.card-block.flipped .card-back {
+  transform: rotateY(0deg);
+}
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 15px; /* Added border-radius */
+}
+
+.card-front {
+  background-color: #f07506;
+  border: 1px solid #ffffff;
+}
+
+.card-back {
+  background-color: #333333;
+  border: 1px solid #111;
+  transform: rotateY(180deg);
+}
+
+.toast {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f07506;
+  color: #fff; 
+  padding: 10px 20px;
+  border-radius: 10px; /* Added border-radius */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.toast.show {
+  opacity: 1;
+}
+
+.leaderboard-container {
+  margin: 0 auto; 
+  max-width: 700px; 
+  font-size: x-large;
+  border-radius: 8px; /* Added border-radius */
+  overflow: hidden;
+}
+
+.leaderboard-table {
+  width: 100%; 
+  border-collapse: collapse; 
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+  text-align: center;
+  padding: 8px;
+  font-size: 24px;
+}
+
+.leaderboard-table th {
+  position: sticky; 
+  top: 0;
+  background-color: #fffaf6;
+}
+
+.scrollable-leaderboard {
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.highlight {
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .navbar-left h1 {
+    font-size: 27px;
+  }
+  
+  .navbar-right p {
+    font-size: 20px;
+  }
+
+  .card-container {
+    flex-wrap: wrap;
+  }
+  
+  .card-block {
+    margin: 10px;
+  }
+}
+
+@media (min-width: 769px) {
+  .navbar-left h1 {
+    font-size: 35px; 
+  }
+  
+  .navbar-right p {
+    font-size: 27px;
+  }
+
+  .card-block {
+    height: 380px;
+    width: 200px; 
+  }
+}
+
+.card-block {
+  width: 150px;
+  height: 200px;
+  perspective: 1000px;
+  cursor: pointer;
+  border-radius: 15px; /* Added border-radius */
+}
+
+.card-block .card-front,
+.card-block .card-back {
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.6s;
+  border-radius: 15px; /* Added border-radius */
+}
+
+.card-block .card-front {
+  background-color: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-block .card-back {
+  transform: rotateY(180deg);
+  background-color: #fff;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-block.flipped .card-front {
+  transform: rotateY(180deg);
+}
+
+.card-block.flipped .card-back {
+  transform: rotateY(0deg);
+}
+
+.leaderboard-section {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f0f4f8;
+  border-radius: 15px; /* Added border-radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.leaderboard-title {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+  padding: 12px;
+  text-align: center;
+  color: #555;
+  border-bottom: 1px solid #ddd;
+}
+
+.leaderboard-table th {
+  background-color: #f3f3f3;
+  font-weight: 600;
+}
+
+.highlighted {
+  background-color: #d0e8f2;
+  font-weight: bold;
+}
+
+.new-game-btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.new-game-button {
+  background-color: #007acc;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px; /* Added border-radius */
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.new-game-button:hover {
+  background-color: #005f99;
+}
