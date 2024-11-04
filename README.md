@@ -9,8 +9,7 @@
 
 
 
-Welcome to the Exploding Kittens card game! This is an online single-player card game where you try to draw cards from a deck without exploding kittens blowing up in your face. Let's dive into how the game works and how you can access it locally.
-
+Welcome to the Exploding Kittens card game! This is an online, single-player game where your goal is to draw cards from a deck without triggering an exploding kitten and ending the game. Let’s go over how it works and how you can play it locally.
 ## Screenshots
 
   <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
