@@ -1,4 +1,4 @@
-# Exploding Kittens Card Game 😼
+# Kitten Card Game 😸
 
 
 ![ReactJS](https://img.shields.io/badge/-ReactJs-61DAFB?logo=react&logoColor=white)
@@ -23,10 +23,10 @@ Welcome to the Exploding Kittens card game! This is an online single-player card
 
 ### Rules:
 - **Types of Cards:**
-  - 😼 **Cat Card**: Harmless card, just a cute cat.
-  - 🙅‍♂️ **Defuse Card**: Used to defuse an exploding kitten.
-  - 🔀 **Shuffle Card**: Shuffles the deck and resets the game.
-  - 💣 **Exploding Kitten Card**: Instant game over if drawn.
+  - 🐱 **Cat Card**:  A harmless, purely adorable cat card.
+  - 👨‍✈️ **Defuse Card**:  Can be used to prevent an exploding kitten from ending the game.
+  - 🔀 **Shuffle Card**: Reshuffles the deck and restarts the game.
+  - 💣 **Exploding Kitten Card**:Draw this, and it’s game over unless you have a defuse card.
 
 
     <img src="exploding-kittens-frontend/src/assets/cat1.png" alt="cat1" style="height: 130px;">
