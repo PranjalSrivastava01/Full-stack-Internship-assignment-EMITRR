@@ -88,3 +88,6 @@ That's it! You've successfully set up Redis for your project and connected to it
 - Redux
 - GoLang
 - Redis
+## URL
+- Backend=https://backend-emittr2-h3ou.onrender.com/api/
+- Frontend=https://emitrr-frontend-oci6.vercel.app/
